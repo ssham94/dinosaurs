@@ -1,0 +1,22 @@
+# Exercise 1
+SELECT COUNT(*) FROM dinos;
+
+# Exercise 2
+SELECT * FROM dinos WHERE period = 'Jurassic';
+
+# Exercise 3
+SELECT SUM(length) FROM dinos WHERE period = 'Cretaceous'; 
+# Answer: 1366.45
+
+# Exercise 4
+SELECT * FROM dinos WHERE period = 'Cretaceous' OR period = 'Jurassic' ORDER BY name;
+
+# Exercise 5
+SELECT * FROM dinos WHERE t_order = 'Saurischia' AND diet = 'Herbivorous';
+
+# Exercise 6
+UPDATE dinos SET name = 'Shortie' WHERE length = (SELECT MIN(length) FROM dinos);
+
+# Exercise 7
+SELECT * FROM dinos ORDER BY name;
+# Answer: Aardonyx   `
